@@ -93,11 +93,40 @@
 
 
 # TASK9
-temp = -5
-is_raining = False
+#temp = -5
+#is_raining = False
 
-if temp > 35 or temp < 0 or is_raining:
-    print("The ourdoor event is cancelled")
-else: 
-    print("The outdoor event is still scheduled")
-    
+#if temp > 35 or temp < 0 or is_raining:
+#    print("The ourdoor event is cancelled")
+#else: 
+#    print("The outdoor event is still scheduled")
+
+
+
+#TASK10
+#num = 5
+#result = "EVEN" if num % 2 == 0 else "ODD"
+
+#print(result)
+
+
+
+#TASK11
+#num = 5
+#a = 6
+#b = 7
+#age = 13
+
+#status = "Adult" if age >= 18 else "Child"
+#print(status)
+
+
+
+#TASK12
+#name = input("Enter your full name: ")
+#result = len(name)
+#result = name.find(" ")
+
+#print(result)
+
+
