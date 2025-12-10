@@ -78,14 +78,26 @@
 
 
 # TASK8
-unit = input("IS this temperature in Celsius or Fahrenheit (C/F): ")
-temp = float(input("PLease enter the temperature: "))
+#unit = input("IS this temperature in Celsius or Fahrenheit (C/F): ")
+#temp = float(input("PLease enter the temperature: "))
 
-if unit == "C" :  
-    temp = round((9 * temp) / 5 + 32, 1)
-    print(f"The temperature in Fahremheit is: {temp}^F")
-elif unit == "F" :
-    temp = round((temp - 32) * 5 / 9, 1)
-    print(f"The temperature in Celsius is: {temp}^C")
-else:
-    print(f"{unit} is an invalid unit if measurment")
+#if unit == "C" :  
+#    temp = round((9 * temp) / 5 + 32, 1)
+#    print(f"The temperature in Fahremheit is: {temp}^F")
+#elif unit == "F" :
+#    temp = round((temp - 32) * 5 / 9, 1)
+#    print(f"The temperature in Celsius is: {temp}^C")
+#else:
+#    print(f"{unit} is an invalid unit if measurment")
+
+
+
+# TASK9
+temp = -5
+is_raining = False
+
+if temp > 35 or temp < 0 or is_raining:
+    print("The ourdoor event is cancelled")
+else: 
+    print("The outdoor event is still scheduled")
+    
