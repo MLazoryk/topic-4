@@ -56,10 +56,21 @@
 
 
 
-#TASK6
+# TASK6
+# import math
+# radius = float(input('Enter the radius of a circle: '))
+
+# circumference = 2 * math.pi * radius
+
+# print(f"The circumference is: {round(circumference, 2)}cm")
+
+
+
+# TASK7
 import math
-radius = float(input('Enter the radius of a circle: '))
 
-circumference = 2 * math.pi * radius
+a = float(input("Please enter the side A: "))
+b = float(input("Please enter the side B: "))
+c = math.sqrt(pow(a, 2) + pow(b, 2))
 
-print(f"The circumference is: {round(circumference, 2)}cm")
+print(f"Side C >>> {c}cm")
