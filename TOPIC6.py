@@ -55,5 +55,7 @@ def calculate_square_root(numbers: list) -> None:
             # Square root of negative numbers causes problems in math 
             if number < 0: 
 
-
+                # If the number IS negative, we call out log_warning function
+                # WE pass it a message that says we found a negative number
+                log_warning(f"Found negative number: {number}. Skipping.")
                 
