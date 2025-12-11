@@ -62,4 +62,10 @@ def calculate_square_root(numbers: list) -> None:
                 # "continue" means skip the rest of this loop and go to next number
                 continue
 
+            # If we get here, the number is NOT negative
+            # math.sqrt(number) calculates the square root of the number
+            # The sqrt() function is inside the math library we imported
+            root = math.sqrt(number)
+
+
             
