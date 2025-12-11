@@ -46,3 +46,8 @@ def calculate_square_root(numbers: list) -> None:
     # It goes throgh the list one item at a time
     # Each time through the loop, the current item is called "number"
     for number in numbers: 
+
+        # "try" means we're going to run some code 
+        # If something goes wrong (an error), Python will jump to "except"
+        try: 
+            
