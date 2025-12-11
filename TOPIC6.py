@@ -1,11 +1,16 @@
-# Define a function named 'say_hello' that takes one parameter called 'name' 
+# Define a function named 'say_hello' that takes one parameter called 'name'
+# This function can be called later to print a greeting
 def say_hello(name):
-
-# Print a greeting message that includes the 'name' parameter
+    # When called, this prints: "Hello, " followed by whatever name was provided
+    # Example: say_hello('John') would print: "Hello, John"
     print(f'Hello, {name}')
 
-# Print a message indicating that this file (hello.py) has been imported
+# This print statement runs WHENEVER this file is loaded by Python
+# It runs whether you run the file directly OR import it from another file
+# The message is confusing because it says "imported" but that's not always true
 print("You imported hello.py")
 
-# Call the 'say_hello' function with the string 'user' as the argument 
+# This function call happens immediately when the file loads
+# It calls the say_hello function with 'user' as the argument
+# So "Hello, user" will always print when this file loads
 say_hello('user')
