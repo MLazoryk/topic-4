@@ -24,3 +24,11 @@ def log_info(message: str) -> None:
  # # {message} will be replaced with the actual message we pass to the function 
  # [INFO] is just a label to show this is an information message 
     print(f"[info] {message}")
+
+# This creates a function called "log_warnign"
+# It works the same way as log_info, but for warning messages
+def log_warning(message: str) ->None:
+
+    # Prints a warning message with [WARNING] label
+    print(f"[WARNING] {message}")
+
