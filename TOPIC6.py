@@ -50,4 +50,10 @@ def calculate_square_root(numbers: list) -> None:
         # "try" means we're going to run some code 
         # If something goes wrong (an error), Python will jump to "except"
         try: 
-            
+
+            # < means "less than", so this checks for negative numbers
+            # Square root of negative numbers causes problems in math 
+            if number < 0: 
+
+
+                
