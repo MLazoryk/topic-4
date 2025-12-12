@@ -70,8 +70,16 @@
 
 
 
-#TASK6
+# TASK6
+#from collections import Counter
+
+#letter_count = Counter("banana")
+#print(letter_count)
+
+
+
+# TASK7
 from collections import Counter
 
-letter_count = Counter("banana")
-print(letter_count)
+sentence = "the quick brown for jumps over the lazy dog"
+
