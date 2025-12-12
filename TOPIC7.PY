@@ -83,3 +83,7 @@ from collections import Counter
 
 sentence = "the quick brown for jumps over the lazy dog"
 
+#Split the sentence onto individual words 
+words = sentence.split()
+
+word_count = Counter(words)
