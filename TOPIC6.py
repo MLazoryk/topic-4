@@ -86,7 +86,7 @@
 # Requirements: Check if text is same forwards and backwards (ignore spaces/punctuation, ignore uppercase/lowercase)
 
 # s = input text | str text type | bool = returns True/False
-def is_lindrome(s: str) -> bool:
+def is_palindrome(s: str) -> bool:
 
     # new_s = empty text container | "" = empty text
     new_s = ""
@@ -105,3 +105,6 @@ def is_lindrome(s: str) -> bool:
 
     # return = give answer | s == s[::-1] = "is text equal to reversed text?"
     return s == s[::-1]
+
+# print = show on screen | is_palindrome() = callour funciton | "Козак з казок" = test text
+print(is_palindrome("Козак з казок")) # Output: Ture
