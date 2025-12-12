@@ -102,3 +102,6 @@ def is_lindrome(s: str) -> bool:
     
     # s = use cleaned text | = | new_s = our new text (no spaces, lowercase)
     s = new_s
+
+    # return = give answer | s == s[::-1] = "is text equal to reversed text?"
+    return s == s[::-1]
