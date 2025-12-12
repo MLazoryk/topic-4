@@ -18,3 +18,5 @@ import collections
 
 Cat = collections.namedtuple('Cat',['nickname','age','owner'])
 
+cat = Cat('Mafia', 4, 'Robert')
+
