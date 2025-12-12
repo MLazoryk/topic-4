@@ -112,4 +112,20 @@ def pop(stack):
         return stack.pop() # Remove and return last element
     else: 
         print("Стек порожній") # Print error message
-        
+
+# Function to view top element without removing it
+def peek(stack):
+    if not is_empty(stack): # Check if stack is not empty
+        return stack[-1]
+    else:
+        print("Стек порожній")
+
+# Create a stack
+stack = create_stack()
+
+# Add three elements to stack
+push(stack, 'a') # Stack: ['a']
+push(stack,'b')  # Stack: ['a', 'b']
+push(stack, 'c') # Stack: ['a', 'b', 'c']
+
+
