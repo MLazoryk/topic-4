@@ -1,14 +1,3 @@
-#TASK1
-#def say_hello(name):
-
-#    print(f'Hello, {name}')
-
-#print("You imported hello.py")
-
-#say_hello('user')
-
-
-
 #TASK2
 # Import the math library for mathematical operations
 # This line imports a Python library called "math"
@@ -88,3 +77,15 @@
     # This calls our main function and passes it the numbers list
     # The function will process each number in the list
 #    calculate_square_root(numbers)
+
+
+
+
+
+#TASK3
+# Requirements: Check if text is same forwards and backwards (ignore spaces/punctuation, ignore uppercase/lowercase)
+
+# s = input text | str text type | bool = returns True/False
+def is_lindrome(s: str) -> bool:
+
+    
