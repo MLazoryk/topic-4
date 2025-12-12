@@ -106,4 +106,10 @@ def is_empty(stack):
 def push(stack, item):
     stack.append(item) # Add item to end of list
 
-#
+# Function to remove element from top of stack
+def pop(stack):
+    if not is_empty(stack): # Check if stack is not empty
+        return stack.pop() # Remove and return last element
+    else: 
+        print("Стек порожній") # Print error message
+        
