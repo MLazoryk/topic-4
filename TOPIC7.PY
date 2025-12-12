@@ -79,15 +79,31 @@
 
 
 # TASK7
-from collections import Counter
+#from collections import Counter
 
-sentence = "the quick brown for jumps over the lazy dog"
+#sentence = "the quick brown for jumps over the lazy dog"
 
 #Split the sentence onto individual words 
-words = sentence.split()
+#words = sentence.split()
 
-word_count = Counter(words)
+#word_count = Counter(words)
 
-for word, count in word_count.items():
-    print(f"{word}: {count}")
-    
+#for word, count in word_count.items():
+#    print(f"{word}: {count}")
+
+
+
+# TASK8
+# Function to create an empty stack
+def create_stack():
+    return[] # Return an empty list 
+
+# Function to check if stack is empty 
+def is_empty(stack):
+    return len(stack) == 0 # True if stack has no elements
+
+# Function to add element to top of stack
+def push(stack, item):
+    stack.append(item) # Add item to end of list
+
+#
