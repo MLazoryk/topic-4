@@ -215,28 +215,42 @@
 
 
 # TASK10
-from collections import deque 
+#from collections import deque 
 
 # Create an empty deque
-d = deque()
+#d = deque()
 
 # Add 'middle' to the right end of deque
-d.append('middle')
+#d.append('middle')
 
 # Add 'Last' to the right end of deque
-d.append('last')
+#d.append('last')
 
 # Add 'first' tp the left end of deque
-d.appendleft('first')
+#d.appendleft('first')
 
 # Print current deque (convertr to list for display)
-print("the deque after adding the elements:", list(d))
+#print("the deque after adding the elements:", list(d))
 
 # Remove and return element from right end
-print("Removed last element:", d.pop())
+#print("Removed last element:", d.pop())
 
 # Remove and return element from left and 
-print("Removed first element:", d.popleft())
+#print("Removed first element:", d.popleft())
 
 # Print the queue after removing the elements
-print("The deque after removing certain elements:", list(d))
+#print("The deque after removing certain elements:", list(d))
+
+
+
+#TASK11
+from collections import deque 
+
+# List of tasks, each task if a dictionary 
+tasks  = [
+    {"type": "fast", "name": "Помити посуд"},
+    {"type": "slow", "name": "Подивитись серіал"},
+    {"type": "fast", "name": "Вигуляти собаку"},
+    {"type": "slow",  "name": "Почитати книгу"}
+]
+
