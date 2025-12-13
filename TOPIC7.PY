@@ -306,12 +306,12 @@ from decimal import Decimal
 
 number = Decimal("1.45")
 
-# Default rounding (ROUND_HALF_EVEN) - round to nearest EVEN number
-print("Default rounding ROUND_HALF_EVEN:", number.quantize(Decimal("0.0")))
-
 # ROUND_HALF_UP - normal rounding (like in school)
 print("Round up ROUND_HALF_UP:", number.quantize(Decimal("0.0"), rounding=decimal.ROUND_HALF_UP))
 
 # ROUNF_FLOOR - always round DOWN
 print("Round down ROUND_FLOOR:", number.quantize(Decimal("0.0"), rounding=decimal.ROUND_FLOOR))
+
+# Round 3.14159 to 3 decimal places#
+print("Round to three decimals:", Decimal("3.14159").quantize(Decimal("0.00")))
 
