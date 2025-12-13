@@ -245,27 +245,34 @@
 
 #TASK11
 from collections import deque 
-
-# List of tasks, each task if a dictionary 
-tasks  = [
+  
+# Maka a list of 4 tasks to do 
+# Each task has 2 pieces of info: type (fast/slow) and name (waht to do)
+tasks = [
     {"type": "fast", "name": "Помити посуд"},
     {"type": "slow", "name": "Подивитись серіал"},
-    {"type": "fast", "name": "Вигуляти собаку"},
-    {"type": "slow",  "name": "Почитати книгу"}
+    {"type": "fast", "name": "Вигулти собаку"},
+    {"type": "slow", "name": "Почитати книгу"}
 ]
 
+# Create am empty task queue 
 task_queue = deque()
 
+# Go through each task one by one
 for task in tasks:
+    # Check if task is "fast" type (high priority)
     if task["type"] == "fast":
-        # Add to left end for high priority (fast tasks)
+        # Put fast task at FRONT of queue (will be done first)
         task_queue.appendleft(task)
-        print(f"Додано швидке завдання: {task['name']}")
+        print(f"Added fast task: {task['name']}")
     else:
-        # Add to right end for low priority (slow tasks)
+        # Put slow task at BACK of queue (will be done later)
         task_queue.append(task)
-        print(f"Додано повілье завдання: {task['name']}")
+        print(f"Added slow task: {task['name']}")
+
+# Now do all tasks in the queue 
+# Keep going while there are tasks left
 while task_queue:
-    # Remove and get task from left end (highest priority)
+    # Take task from FRONT of queue (highes priority)
     task = task_queue.popleft()
-    print(f"Виконується завдання: {task['name']}")
+    print(f"Doing task: {task['name']}")
