@@ -254,3 +254,18 @@ tasks  = [
     {"type": "slow",  "name": "Почитати книгу"}
 ]
 
+task_queue = deque()
+
+for task in tasks:
+    if task["type"] == "fast":
+        # Add to left end for high priority (fast tasks)
+        task_queue.appendleft(task)
+        print(f"Додано швидке завдання: {task['name']}")
+    else:
+        # Add to right end for low priority (slow tasks)
+        task_queue.append(task)
+        print(f"Додано повілье завдання: {task['name']}")
+while task_queue:
+    # Remove and get task from left end (highest priority)
+    task = task_queue.popleft()
+    print(f"Виконується завдання: {task['name']}")
