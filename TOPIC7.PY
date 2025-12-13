@@ -279,19 +279,33 @@
 
 
 
-#TASK12
+# TASK12
 # Import Decimal for precise decimal numbers and ROUND_DOWN for rounding method
-from decimal import Decimal, ROUND_DOWN
+#from decimal import Decimal, ROUND_DOWN
 
 # Create a decimal number 3.14159
 # using Decimal ('3,14159' instead of float for exact decimal representation)
-number = Decimal('3.14159')
+#number = Decimal('3.14159')
 
 # Round the number to 2 deciaml places
 # quantize() = set how many decimal places too keep
 # Example: 3.14159 >>> 3.14 (not 3.15)
-rounded_number = number.quantize(Decimal('0.00'), rounding = ROUND_DOWN)
+#rounded_number = number.quantize(Decimal('0.00'), rounding = ROUND_DOWN)
 
-print(rounded_number)
+#print(rounded_number)
 
+
+
+# TASK13
+# Import the decimal module fr working with precise decimal numbers 
+import decimal 
+
+# Specifically import the Decimal class to create decimal numbers 
+from decimal import Decimal
+
+
+number = Decimal("1.45")
+
+# Default rounding (ROUND_HALF_EVEN) - round to nearest EVEN number
+print("Default rounding ROUND_HALF_EVEN:", number.quantize(Decimal("0.0")))
 
