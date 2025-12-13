@@ -219,3 +219,13 @@ from collections import deque
 
 # Create an empty deque
 d = deque()
+
+# Add 'middle' to the right end of deque
+d.append('middle')
+
+# Add 'Last' to the right end of deque
+d.append('last')
+
+# Add 'first' tp the left end of deque
+d.appendleft('first')
+
