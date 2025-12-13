@@ -166,12 +166,48 @@
 
 
 # TASK9
-# Import deque class from collection module
-# Deque = "double-ended queue" - can add/remove from both ends
+# Import deque from collections module
 from collections import deque
 
-# Create an empty queue using deque
-# Queue = data structure like a line of people - first in, first out (FIFO)
-queue  = deque()
+# Create an empty queue
+queue = deque()
 
-#
+# Add 'a' to the end of queue (enqueue operation)
+queue.append('a')
+
+# Add 'b' to the end of queue (enqueue operation)
+queue.append('b')
+
+# Add 'c' to the end of queue (enqueue operation)
+queue.append('c')
+
+# Print queue after adding elements
+# list(queue) converts deque to list for display
+print("Черга після додавання елементів:", list(queue))
+
+# Remove and return first element (dequeue operation)
+# popleft() removes from left/front of queue
+print("Видалений елемент:", queue.popleft())
+
+# Print queue after removing first element
+print("Черга після видалення елемента:", list(queue))
+
+# Peek at first element without removing
+# queue[0] accesses first element
+print("Перший елемент у черзі:", queue[0])
+
+# Check if queue is empty
+# len(queue) == 0 checks if length is zero
+print("Чи черга порожня:", len(queue) == 0)
+
+# Get size of queue
+# len(queue) returns number of elements
+print("Розмір черги:", len(queue))
+
+# Expected output:
+# Черга після додавання елементів: ['a', 'b', 'c']
+# Видалений елемент: a
+# Черга після видалення елемента: ['b', 'c']
+# Перший елемент у черзі: b
+# Чи черга порожня: False
+# Розмір черги: 2
