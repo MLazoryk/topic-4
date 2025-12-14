@@ -78,3 +78,9 @@ twenty_percent_discount = discount(20)
 # 500 - 10% = 500 * 0.9 = 450
 discounted_price = ten_percent_discount(500) # Result: 450.0
 print(discounted_price)
+
+# Use the 20% discount on 500$
+# 500 - 20% = 500 * 0.8 = 400
+discounted_price = twenty_percent_discount(500) # 400.0
+print(discounted_price)
+
