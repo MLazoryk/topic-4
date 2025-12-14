@@ -70,3 +70,6 @@ def discount (discount_percentage: int) ->Callable[[float], float]:
 # ten_percent_discount = function that gives 10% off any price 
 ten_percent_discount = discount(10)
 
+# Create a 20% discount calculator
+# twenty_percent_discount = function that gives 20% any price
+twenty_percent_discount = discount(20)
